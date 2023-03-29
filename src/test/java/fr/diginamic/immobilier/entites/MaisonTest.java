@@ -14,6 +14,10 @@ class MaisonTest {
     Cuisine cuisine = new Cuisine(1, 20);
     SalleDeBain salleDeBain = new SalleDeBain(1, 20);
 
+    // Ne sont pas ajoutable
+    //SalleDeBain bug = new SalleDeBain(null, 20);
+    //SalleDeBain bug2 = new SalleDeBain(1, "null");
+
     // Je ne voit pas de problème rendant imposible d'a avoir son salon dans la cave.
     // Certaine maison sont même entérer de nos jour 0.o
     // Il y as aussi des locations d'appartement au sous sol
