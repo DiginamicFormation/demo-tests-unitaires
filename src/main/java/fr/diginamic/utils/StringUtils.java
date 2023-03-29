@@ -21,6 +21,10 @@ public final class StringUtils {
 		int[] cost = new int[len0];
 		int[] newcost = new int[len0];
 
+		if (lhs == null || rhs == null) {
+			throw new IllegalArgumentException("Les chaînes d'entrée ne peuvent pas être nulles.");
+		}
+
 		for (int i = 0; i < len0; i++) {
 			cost[i] = i;
 		}
